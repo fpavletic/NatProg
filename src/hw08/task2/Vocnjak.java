@@ -1,8 +1,5 @@
 package hw08.task2;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -14,9 +11,7 @@ public class Vocnjak {
 
     private static final BiFunction<MutableInteger, MutableInteger, MutableInteger> MERGER = (i1, i2) -> i1.add(i2.value);
 
-    public static void main(String[] args) throws FileNotFoundException{
-
-        System.setIn(new FileInputStream(new File("./src/hw08/task2/input.txt")));
+    public static void main(String[] args){
 
         TreeMap<Long, MutableInteger> eventPositionToValue = new TreeMap<>();
         Scanner sysIn = new Scanner(System.in);
@@ -42,19 +37,19 @@ public class Vocnjak {
         }
 
         long sprayed = 0, destroyed = 0, last = 0;
-        int current = 0;
+        int currentSprayCount = 0;
         for ( Map.Entry<Long, MutableInteger> entry : eventPositionToValue.entrySet()){
             long position = entry.getKey();
             position = position >= n ? n : position;
             if ( position > 0l ) {
-                if ( current > k ) {
+                if ( currentSprayCount > k ) {
                     destroyed += position - last;
-                } else if ( current > 0l ) {
+                } else if ( currentSprayCount > 0l ) {
                     sprayed += position - last ;
                 }
                 last = position;
             }
-            current += entry.getValue().value;
+            currentSprayCount += entry.getValue().value;
         }
         System.out.println(sprayed);
         System.out.println(destroyed);
