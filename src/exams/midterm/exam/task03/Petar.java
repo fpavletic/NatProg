@@ -1,4 +1,4 @@
-package midterm.task03;
+package exams.midterm.exam.task03;
 
 import java.util.HashSet;
 import java.util.LinkedList;

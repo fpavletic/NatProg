@@ -1,4 +1,4 @@
-package midterm.task01;
+package exams.midterm.exam.task01;
 
 import java.util.ArrayList;
 import java.util.Arrays;

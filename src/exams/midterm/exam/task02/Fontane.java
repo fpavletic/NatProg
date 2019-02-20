@@ -1,4 +1,4 @@
-package midterm.task02;
+package exams.midterm.exam.task02;
 
 import java.util.Scanner;
 

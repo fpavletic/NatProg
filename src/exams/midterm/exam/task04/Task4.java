@@ -1,4 +1,4 @@
-package midterm.task04;
+package exams.midterm.exam.task04;
 
 public class Task4 {
 

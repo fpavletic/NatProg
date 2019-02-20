@@ -1,4 +1,4 @@
-package entrance.exam.task03;
+package exams.entrance.exam.task03;
 
 
 import java.util.Iterator;
@@ -8,17 +8,15 @@ public class NumberIndexFinder {
 
     private int findNumberIndex(int number){
 
-        while ( true ){
-            short digitCount = getDigitCount(number);
-            int currentNumber = getStartingNumber(digitCount);
-            Iterator<Integer> sequenceGenerator = new SequenceGenerator(currentNumber % 10, digitCount);
-            int index = 1;
-            while ( number != currentNumber ){
-                currentNumber = sequenceGenerator.next() + (currentNumber % (int)Math.pow(10, digitCount -1 )) * 10;
-                index++;
-            }
-            return index;
+        short digitCount = getDigitCount(number);
+        int currentNumber = getStartingNumber(digitCount);
+        Iterator<Integer> sequenceGenerator = new SequenceGenerator(currentNumber % 10, digitCount);
+        int index = 1;
+        while ( number != currentNumber ){
+            currentNumber = sequenceGenerator.next() + (currentNumber % (int)Math.pow(10, digitCount -1 )) * 10;
+            index++;
         }
+        return index;
     }
 
     private short getDigitCount(int number){

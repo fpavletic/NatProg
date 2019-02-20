@@ -1,4 +1,4 @@
-package entrance.exam.task04;
+package exams.entrance.exam.task04;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package entrance.exam.task01;
+package exams.entrance.exam.task01;
 
 import java.util.Scanner;
 

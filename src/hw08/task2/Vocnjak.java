@@ -41,7 +41,7 @@ public class Vocnjak {
         for ( Map.Entry<Long, MutableInteger> entry : eventPositionToValue.entrySet()){
             long position = entry.getKey();
             position = position >= n ? n : position;
-            if ( position > 0l ) {
+            if ( position > 0L ) {
                 if ( currentSprayCount > k ) {
                     destroyed += position - last;
                 } else if ( currentSprayCount > 0l ) {

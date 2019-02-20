@@ -1,4 +1,4 @@
-package midterm.task05;
+package exams.midterm.exam.task05;
 
 import java.util.HashMap;
 import java.util.Map;

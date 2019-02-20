@@ -1,4 +1,4 @@
-package entrance.exam.task02;
+package exams.entrance.exam.task02;
 
 import java.util.Iterator;
 import java.util.Scanner;
