@@ -7,6 +7,9 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.TreeMap;
 
+//IMPORTANT: The idea behind this solution is correct, HOWEVER I messed something up while
+//implementing it so it does NOT currently work.
+
 //Task: Find the circumference of the convex shape containing all of the provided points
 //Solution implements the Graham scan algorithm, you can read more about it here:
 //https://www.geeksforgeeks.org/convex-hull-set-2-graham-scan/
